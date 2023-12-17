@@ -4,4 +4,27 @@ info:
   version: 1.0.0
 servers:
   - url: http://localhost:3010/
-paths: {}
+paths:
+  /login:
+    post:
+      summary: ログイン
+      operationId: authLogin
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                password:
+                  type: string
+              required:
+                - username
+                - password
+      responses:
+        "200":
+          description: ログイン成功
+        "401":
+          description: 認証エラー
