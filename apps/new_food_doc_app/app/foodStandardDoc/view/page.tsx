@@ -1,9 +1,7 @@
+import FoodBaseInfoView from "./_components/FoodBaseInfoView";
+
 const foodStandardDocView = () => {
-  return (
-    <div>
-      <h1>foodStandardDocView</h1>
-    </div>
-  );
+  return <FoodBaseInfoView />;
 };
 
 export default foodStandardDocView;
