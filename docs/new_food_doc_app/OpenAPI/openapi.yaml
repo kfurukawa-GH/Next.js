@@ -31,3 +31,39 @@ paths:
           description: ログイン成功
         "401":
           description: 認証エラー
+  /product/{productId}/base:
+    get:
+      summary: "Get basic product information"
+      operationId: getBaseInfo
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  product_name:
+                    type: string
+                    title: 商品名
+                  common_products_code:
+                    type: string
+                    title: 共通商品コード
+                  brand_name:
+                    type: string
+                    title: ブランド名
+                  applying_date:
+                    type: string
+                    title: 適用日
+                  maker_name:
+                    type: string
+                    title: メーカー名
+                  pb_nb_classification:
+                    type: string
+                    title: PB／NB分類
