@@ -5,7 +5,7 @@ const TableHeader = (props: { headers: TableHeaderProps[] }) => {
     <thead className="bg-gray-700 text-gray-400 uppercase">
       <tr>
         {props.headers.map((header) => (
-          <th scope="col" className="px-6 py-3">
+          <th key={header.value} scope="col" className="px-6 py-3">
             {header.value}
           </th>
         ))}
