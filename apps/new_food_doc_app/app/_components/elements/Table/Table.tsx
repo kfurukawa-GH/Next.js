@@ -10,14 +10,18 @@ type TableProps = {
 
 const Table = ({ headers, bodies }: TableProps) => {
   return (
-    <>
-      <div className="relative overflow-x-auto shadow-md rounded-lg">
+    <div className="relative overflow-x-auto shadow-md rounded-lg">
+      <div className="sticky top-0 bg-white">
         <table className="table-auto w-full">
           <TableHeader headers={headers} />
+        </table>
+      </div>
+      <div>
+        <table className="table-auto w-full">
           <TableBody bodies={bodies} />
         </table>
       </div>
-    </>
+    </div>
   );
 };
 
