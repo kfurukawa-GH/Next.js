@@ -69,7 +69,7 @@ const LoginForm = () => {
       const res = await trigger({ email, password });
       console.log(res);
       if (res.ok) {
-        router.push("./foodStandardDoc/display/");
+        router.push("./foodStandardDoc/view/");
       } else {
         console.log("Login failed");
       }
