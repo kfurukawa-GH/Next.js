@@ -60,6 +60,7 @@ paths:
                     title: ブランド名
                   applying_date:
                     type: string
+                    format: date
                     title: 適用日
                   maker_name:
                     type: string
@@ -67,3 +68,186 @@ paths:
                   pb_nb_classification:
                     type: string
                     title: PB／NB分類
+              examples:
+                sample1:
+                  summary: "Sample Response 1"
+                  value:
+                    product_name: "Product 1"
+                    common_products_code: "ABC123"
+                    brand_name: "Brand 1"
+                    applying_date: "2023-01-01"
+                    maker_name: "Maker 1"
+                    pb_nb_classification: "PB"
+                sample2:
+                  summary: "Sample Response 2"
+                  value:
+                    product_name: "Product 2"
+                    common_products_code: "XYZ789"
+                    brand_name: "Brand 2"
+                    applying_date: "2023-02-01"
+                    maker_name: "Maker 2"
+                    pb_nb_classification: "NB"
+                sample3:
+                  summary: "Sample Response 3"
+                  value:
+                    product_name: "Product 3"
+                    common_products_code: "DEF456"
+                    brand_name: "Brand 3"
+                    applying_date: "2023-03-01"
+                    maker_name: "Maker 3"
+                    pb_nb_classification: "PB"
+                sample4:
+                  summary: "Sample Response 4"
+                  value:
+                    product_name: "Product 4"
+                    common_products_code: "GHI789"
+                    brand_name: "Brand 4"
+                    applying_date: "2023-04-01"
+                    maker_name: "Maker 4"
+                    pb_nb_classification: "NB"
+                sample5:
+                  summary: "Sample Response 5"
+                  value:
+                    product_name: "Product 5"
+                    common_products_code: "JKL012"
+                    brand_name: "Brand 5"
+                    applying_date: "2023-05-01"
+                    maker_name: "Maker 5"
+                    pb_nb_classification: "PB"
+                sample6:
+                  summary: "Sample Response 6"
+                  value:
+                    product_name: "Product 6"
+                    common_products_code: "MNO345"
+                    brand_name: "Brand 6"
+                    applying_date: "2023-06-01"
+                    maker_name: "Maker 6"
+                    pb_nb_classification: "NB"
+                sample7:
+                  summary: "Sample Response 7"
+                  value:
+                    product_name: "Product 7"
+                    common_products_code: "PQR678"
+                    brand_name: "Brand 7"
+                    applying_date: "2023-07-01"
+                    maker_name: "Maker 7"
+                    pb_nb_classification: "PB"
+                sample8:
+                  summary: "Sample Response 8"
+                  value:
+                    product_name: "Product 8"
+                    common_products_code: "STU901"
+                    brand_name: "Brand 8"
+                    applying_date: "2023-08-01"
+                    maker_name: "Maker 8"
+                    pb_nb_classification: "NB"
+                sample9:
+                  summary: "Sample Response 9"
+                  value:
+                    product_name: "Product 9"
+                    common_products_code: "VWX234"
+                    brand_name: "Brand 9"
+                    applying_date: "2023-09-01"
+                    maker_name: "Maker 9"
+                    pb_nb_classification: "PB"
+                sample10:
+                  summary: "Sample Response 10"
+                  value:
+                    product_name: "Product 10"
+                    common_products_code: "YZA567"
+                    brand_name: "Brand 10"
+                    applying_date: "2023-10-01"
+                    maker_name: "Maker 10"
+                    pb_nb_classification: "NB"
+                sample11:
+                  summary: "Sample Response 11"
+                  value:
+                    product_name: "Product 11"
+                    common_products_code: "BCD890"
+                    brand_name: "Brand 11"
+                    applying_date: "2023-11-01"
+                    maker_name: "Maker 11"
+                    pb_nb_classification: "PB"
+                sample12:
+                  summary: "Sample Response 12"
+                  value:
+                    product_name: "Product 12"
+                    common_products_code: "EFG123"
+                    brand_name: "Brand 12"
+                    applying_date: "2023-12-01"
+                    maker_name: "Maker 12"
+                    pb_nb_classification: "NB"
+                sample13:
+                  summary: "Sample Response 13"
+                  value:
+                    product_name: "Product 13"
+                    common_products_code: "HIJ456"
+                    brand_name: "Brand 13"
+                    applying_date: "2024-01-01"
+                    maker_name: "Maker 13"
+                    pb_nb_classification: "PB"
+                sample14:
+                  summary: "Sample Response 14"
+                  value:
+                    product_name: "Product 14"
+                    common_products_code: "KLM789"
+                    brand_name: "Brand 14"
+                    applying_date: "2024-02-01"
+                    maker_name: "Maker 14"
+                    pb_nb_classification: "NB"
+                sample15:
+                  summary: "Sample Response 15"
+                  value:
+                    product_name: "Product 15"
+                    common_products_code: "NOP012"
+                    brand_name: "Brand 15"
+                    applying_date: "2024-03-01"
+                    maker_name: "Maker 15"
+                    pb_nb_classification: "PB"
+                sample16:
+                  summary: "Sample Response 16"
+                  value:
+                    product_name: "Product 16"
+                    common_products_code: "QRS345"
+                    brand_name: "Brand 16"
+                    applying_date: "2024-04-01"
+                    maker_name: "Maker 16"
+                    pb_nb_classification: "NB"
+                sample17:
+                  summary: "Sample Response 17"
+                  value:
+                    product_name: "Product 17"
+                    common_products_code: "TUV678"
+                    brand_name: "Brand 17"
+                    applying_date: "2024-05-01"
+                    maker_name: "Maker 17"
+                    pb_nb_classification: "PB"
+                sample18:
+                  summary: "Sample Response 18"
+                  value:
+                    product_name: "Product 18"
+                    common_products_code: "WXY901"
+                    brand_name: "Brand 18"
+                    applying_date: "2024-06-01"
+                    maker_name: "Maker 18"
+                    pb_nb_classification: "NB"
+                sample19:
+                  summary: "Sample Response 19"
+                  value:
+                    product_name: "Product 19"
+                    common_products_code: "ZAB234"
+                    brand_name: "Brand 19"
+                    applying_date: "2024-07-01"
+                    maker_name: "Maker 19"
+                    pb_nb_classification: "PB"
+                sample20:
+                  summary: "Sample Response 20"
+                  value:
+                    product_name: "Product 20"
+                    common_products_code: "CDE567"
+                    brand_name: "Brand 20"
+                    applying_date: "2024-08-01"
+                    maker_name: "Maker 20"
+                    pb_nb_classification: "NB"
+        "400":
+          description: エラー
