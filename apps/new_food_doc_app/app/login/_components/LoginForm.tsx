@@ -1,10 +1,12 @@
 "use client";
 import useSWRMutation from "swr/mutation";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Label from "@/app/_components/elements/Label/Label";
 import Button from "@/app/_components/elements/Button/Button";
 import Input from "@/app/_components/elements/Input/Input";
 import { InputAttributes } from "@/app/_types/tagAttributes";
+import Modal from "@/app/_components/elements/Modal/Modal";
 
 async function authLogin(
   url: string,
@@ -21,7 +23,22 @@ async function authLogin(
 
 const LoginForm = () => {
   const router = useRouter();
+  const [showModal, setShowModal] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const { trigger } = useSWRMutation("http://127.0.0.1:4010/login", authLogin);
+
+  const handleModalClose = () => {
+    setShowModal(false);
+  };
+
+  const validateEmail = (email: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const validatePassword = (password: string): boolean => {
+    return password.length >= 8;
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,11 +51,27 @@ const LoginForm = () => {
     const email = target.email.value;
     const password = target.password.value;
 
+    if (!validateEmail(email)) {
+      console.error("Invalid email address");
+      setErrorMessage("メールアドレスの形式が正しくありません。");
+      setShowModal(true);
+      return;
+    }
+
+    if (!validatePassword(password)) {
+      console.error("Password must be at least 8 characters long");
+      setErrorMessage("パスワードは8桁以上で入力してください。");
+      setShowModal(true);
+      return;
+    }
+
     try {
       const res = await trigger({ email, password });
-      console.log("Login successful");
+      console.log(res);
       if (res.ok) {
         router.push("./foodStandardDoc/display/");
+      } else {
+        console.log("Login failed");
       }
     } catch (error) {
       console.error("Login failed:", error);
@@ -70,6 +103,11 @@ const LoginForm = () => {
       <Label htmlFor={passwordTagAttributes.id}>Password</Label>
       <Input {...passwordTagAttributes} />
       <Button type="submit">Sign in</Button>
+      <Modal
+        isOpen={showModal}
+        onClose={handleModalClose}
+        message={errorMessage}
+      />
     </form>
   );
 };
