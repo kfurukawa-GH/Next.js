@@ -669,7 +669,7 @@ paths:
                     apple: false
                     gelatin: false
                     seafood: false
-  /product/{productId}/bulk_display:
+  /products/{productId}/bulk_display:
     get:
       summary: "Get product bulk display information"
       parameters:
