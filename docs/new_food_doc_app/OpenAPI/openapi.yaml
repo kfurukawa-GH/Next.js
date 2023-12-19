@@ -31,7 +31,160 @@ paths:
           description: ログイン成功
         "401":
           description: 認証エラー
-  /product/{productId}/base:
+  /products:
+    get:
+      summary: 商品一覧を取得
+      operationId: getProductsList
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    product_name:
+                      type: string
+                      title: 商品名
+                    common_products_code:
+                      type: string
+                      title: 共通商品コード
+                    brand_name:
+                      type: string
+                      title: ブランド名
+                    applying_date:
+                      type: string
+                      format: date
+                      title: 適用日
+                    maker_name:
+                      type: string
+                      title: メーカー名
+                    pb_nb_classification:
+                      type: string
+                      title: PB／NB分類
+                examples:
+                  - case_1:
+                    summary: ケース1
+                    value:
+                      - product_name: "商品A"
+                        common_products_code: "ABC123"
+                        brand_name: "ブランドX"
+                        applying_date: "2023-01-01"
+                        maker_name: "メーカー1"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品B"
+                        common_products_code: "DEF456"
+                        brand_name: "ブランドY"
+                        applying_date: "2023-02-15"
+                        maker_name: "メーカー2"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品C"
+                        common_products_code: "GHI789"
+                        brand_name: "ブランドZ"
+                        applying_date: "2023-03-20"
+                        maker_name: "メーカー3"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品D"
+                        common_products_code: "JKL012"
+                        brand_name: "ブランドX"
+                        applying_date: "2023-04-10"
+                        maker_name: "メーカー4"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品E"
+                        common_products_code: "MNO345"
+                        brand_name: "ブランドY"
+                        applying_date: "2023-05-25"
+                        maker_name: "メーカー5"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品F"
+                        common_products_code: "PQR678"
+                        brand_name: "ブランドZ"
+                        applying_date: "2023-06-15"
+                        maker_name: "メーカー6"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品G"
+                        common_products_code: "STU901"
+                        brand_name: "ブランドX"
+                        applying_date: "2023-07-30"
+                        maker_name: "メーカー7"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品H"
+                        common_products_code: "VWX234"
+                        brand_name: "ブランドY"
+                        applying_date: "2023-08-20"
+                        maker_name: "メーカー8"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品I"
+                        common_products_code: "YZA567"
+                        brand_name: "ブランドZ"
+                        applying_date: "2023-09-05"
+                        maker_name: "メーカー9"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品J"
+                        common_products_code: "BCD890"
+                        brand_name: "ブランドX"
+                        applying_date: "2023-10-15"
+                        maker_name: "メーカー10"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品K"
+                        common_products_code: "EFG123"
+                        brand_name: "ブランドY"
+                        applying_date: "2023-11-25"
+                        maker_name: "メーカー11"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品L"
+                        common_products_code: "HIJ456"
+                        brand_name: "ブランドZ"
+                        applying_date: "2023-12-10"
+                        maker_name: "メーカー12"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品M"
+                        common_products_code: "KLM789"
+                        brand_name: "ブランドX"
+                        applying_date: "2024-01-05"
+                        maker_name: "メーカー13"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品N"
+                        common_products_code: "NOP012"
+                        brand_name: "ブランドY"
+                        applying_date: "2024-02-20"
+                        maker_name: "メーカー14"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品O"
+                        common_products_code: "PQR345"
+                        brand_name: "ブランドZ"
+                        applying_date: "2024-03-10"
+                        maker_name: "メーカー15"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品P"
+                        common_products_code: "STU678"
+                        brand_name: "ブランドX"
+                        applying_date: "2024-04-25"
+                        maker_name: "メーカー16"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品Q"
+                        common_products_code: "VWX901"
+                        brand_name: "ブランドY"
+                        applying_date: "2024-05-15"
+                        maker_name: "メーカー17"
+                        pb_nb_classification: "PB"
+                      - product_name: "商品R"
+                        common_products_code: "YZA234"
+                        brand_name: "ブランドZ"
+                        applying_date: "2024-06-30"
+                        maker_name: "メーカー18"
+                        pb_nb_classification: "NB"
+                      - product_name: "商品S"
+                        common_products_code: "BCD567"
+                        brand_name: "ブランドX"
+                        applying_date: "2024-07-20"
+                        maker_name: "メーカー19"
+                        pb_nb_classification: "PB"
+        "400":
+          description: エラー
+  /products/{productId}/base:
     get:
       summary: "Get basic product information"
       operationId: getBaseInfo
