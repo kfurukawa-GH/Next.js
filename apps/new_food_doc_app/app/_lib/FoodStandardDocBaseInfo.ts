@@ -1,4 +1,4 @@
-import useSWR from "swr";
+import useSWR, { Fetcher } from "swr";
 
 type ProductsBaseInfo = {
   product_name: string;
@@ -9,16 +9,28 @@ type ProductsBaseInfo = {
   pb_nb_classification: string;
 };
 
-async function fetcher(key: string, init?: RequestInit) {
-  return fetch(key, init).then(
-    (res) => res.json() as Promise<ProductsBaseInfo | null>
-  );
+// async function fetcher(key: string, init?: RequestInit) {
+//   return fetch(key, init).then(
+//     (res) => res.json() as Promise<ProductsBaseInfo | null>
+//   );
+// }
+
+async function fetcher(params: any) {
+  console.log(params[1]);
+  return await fetch(params[0], {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+      Prefer: `example=sample${params[1]}`,
+      // Prefer: `example=sample1`,
+    },
+  }).then((res) => res.json() as Promise<ProductsBaseInfo | null>);
 }
 
 function getProductBaseInfo(id: string) {
   const { data, error, isLoading } = useSWR(
-    `http://127.0.0.1:4010/products/${id}/base`,
-    fetcher
+    [`http://127.0.0.1:4010/products/${id}/base`, id],
+    ([url, id]) => fetcher([url, id])
   );
 
   return {

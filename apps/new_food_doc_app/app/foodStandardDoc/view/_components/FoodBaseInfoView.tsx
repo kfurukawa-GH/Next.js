@@ -20,13 +20,14 @@ const FoodBaseInfoView = () => {
   const list: JSX.Element[] = [];
   let bodyItems: TableBodyProps[] = [];
   if (data) {
-    data.value.forEach((item) => {
-      bodyItems.push({ value: item.product_name });
-      bodyItems.push({ value: item.common_products_code });
-      bodyItems.push({ value: item.brand_name });
-      bodyItems.push({ value: item.applying_date });
-      bodyItems.push({ value: item.maker_name });
-      bodyItems.push({ value: item.pb_nb_classification });
+    data.value.forEach((item, index) => {
+      index += 1;
+      bodyItems.push({ id: index, value: item.product_name });
+      bodyItems.push({ id: index, value: item.common_products_code });
+      bodyItems.push({ id: index, value: item.brand_name });
+      bodyItems.push({ id: index, value: item.applying_date });
+      bodyItems.push({ id: index, value: item.maker_name });
+      bodyItems.push({ id: index, value: item.pb_nb_classification });
       list.push(<TableBody bodies={bodyItems} />);
       bodyItems = [];
     });
