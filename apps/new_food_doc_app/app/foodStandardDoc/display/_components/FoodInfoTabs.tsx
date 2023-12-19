@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
+import FoodAllergyInfo from "./FoodAllergyInfo";
 
-const FoodInfoTabs = () => {
+const FoodInfoTabs = ({ id }: { id: string }) => {
   const [activeTab, setActiveTab] = useState("tab1");
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
@@ -53,7 +54,9 @@ const FoodInfoTabs = () => {
               アレルギー
             </h3>
           </div>
-          <div className="mt-6 border-t border-gray-100">テスト１</div>
+          <div className="mt-6 border-t border-gray-100">
+            <FoodAllergyInfo id={id} />
+          </div>
         </div>
       )}
 
