@@ -9,7 +9,7 @@ export default function foodStandardDocDisplayPage({
   return (
     <div>
       <FoodBaseInfoCard id={params.id} />
-      <FoodInfoTabs />
+      <FoodInfoTabs id={params.id} />
     </div>
   );
 }
