@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import FoodAllergyInfo from "./FoodAllergyInfo";
+import FoodBulkInfo from "./FoodBulkInfo";
 
 const FoodInfoTabs = ({ id }: { id: string }) => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -67,7 +68,9 @@ const FoodInfoTabs = ({ id }: { id: string }) => {
               一括表示
             </h3>
           </div>
-          <div className="mt-6 border-t border-gray-100">テスト２</div>
+          <div className="mt-6 border-t border-gray-100">
+            <FoodBulkInfo id={id} />
+          </div>
         </div>
       )}
 
