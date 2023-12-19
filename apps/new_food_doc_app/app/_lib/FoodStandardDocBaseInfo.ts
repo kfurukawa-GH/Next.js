@@ -1,4 +1,4 @@
-import useSWR, { Fetcher } from "swr";
+import useSWR from "swr";
 
 type ProductsBaseInfo = {
   product_name: string;
@@ -9,14 +9,7 @@ type ProductsBaseInfo = {
   pb_nb_classification: string;
 };
 
-// async function fetcher(key: string, init?: RequestInit) {
-//   return fetch(key, init).then(
-//     (res) => res.json() as Promise<ProductsBaseInfo | null>
-//   );
-// }
-
 async function fetcher(params: any) {
-  console.log(params[1]);
   return await fetch(params[0], {
     method: "GET",
     headers: {

@@ -1,8 +1,4 @@
 "use client";
-import { StaticImageData } from "next/image";
-import Card from "@/app/_components/elements/Card/Card";
-import imageAsset from "../../../../public/foods/coffee.jpg";
-import DescriptionList from "@/app/_components/elements/List/DescriptionList";
 import getProductBaseInfo from "@/app/_lib/FoodStandardDocBaseInfo";
 
 type Items = {
