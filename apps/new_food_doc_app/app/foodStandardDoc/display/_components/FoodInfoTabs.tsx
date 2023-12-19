@@ -16,7 +16,7 @@ const FoodInfoTabs = () => {
               className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
               onClick={() => handleTabClick("tab1")}
             >
-              企業
+              アレルギー
             </button>
           </li>
           <li className="me-2">
@@ -24,7 +24,7 @@ const FoodInfoTabs = () => {
               className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
               onClick={() => handleTabClick("tab2")}
             >
-              原材料
+              一括表示
             </button>
           </li>
           <li className="me-2">
@@ -32,7 +32,7 @@ const FoodInfoTabs = () => {
               className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
               onClick={() => handleTabClick("tab3")}
             >
-              一括表示
+              会社
             </button>
           </li>
           <li className="me-2">
@@ -40,15 +40,7 @@ const FoodInfoTabs = () => {
               className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
               onClick={() => handleTabClick("tab4")}
             >
-              栄養成分
-            </button>
-          </li>
-          <li className="me-2">
-            <button
-              className="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              onClick={() => handleTabClick("tab5")}
-            >
-              アレルギー
+              工場
             </button>
           </li>
         </ul>
@@ -58,7 +50,7 @@ const FoodInfoTabs = () => {
         <div className="bg-white rounded-lg m-3 p-4">
           <div className="px-4 sm:px-0">
             <h3 className="text-base font-semibold leading-7 text-gray-900">
-              企業情報
+              アレルギー
             </h3>
           </div>
           <div className="mt-6 border-t border-gray-100">テスト１</div>
@@ -69,7 +61,29 @@ const FoodInfoTabs = () => {
         <div className="bg-white rounded-lg m-3 p-4">
           <div className="px-4 sm:px-0">
             <h3 className="text-base font-semibold leading-7 text-gray-900">
-              原材料
+              一括表示
+            </h3>
+          </div>
+          <div className="mt-6 border-t border-gray-100">テスト２</div>
+        </div>
+      )}
+
+      {activeTab === "tab3" && (
+        <div className="bg-white rounded-lg m-3 p-4">
+          <div className="px-4 sm:px-0">
+            <h3 className="text-base font-semibold leading-7 text-gray-900">
+              会社
+            </h3>
+          </div>
+          <div className="mt-6 border-t border-gray-100">テスト２</div>
+        </div>
+      )}
+
+      {activeTab === "tab4" && (
+        <div className="bg-white rounded-lg m-3 p-4">
+          <div className="px-4 sm:px-0">
+            <h3 className="text-base font-semibold leading-7 text-gray-900">
+              工場
             </h3>
           </div>
           <div className="mt-6 border-t border-gray-100">テスト２</div>
