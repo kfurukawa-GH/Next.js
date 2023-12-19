@@ -422,92 +422,253 @@ paths:
                 type: object
                 properties:
                   shrimp:
-                    type: string
+                    type: boolean
                     title: えび
                   crab:
-                    type: string
+                    type: boolean
                     title: かに
                   wheat:
-                    type: string
+                    type: boolean
                     title: 小麦
                   soba:
-                    type: string
+                    type: boolean
                     title: そば
                   egg:
-                    type: string
+                    type: boolean
                     title: 卵
                   milk_component:
-                    type: string
+                    type: boolean
                     title: 乳成分
                   peanut:
-                    type: string
+                    type: boolean
                     title: 落花生
                   almond:
-                    type: string
+                    type: boolean
                     title: アーモンド
                   abalone:
-                    type: string
+                    type: boolean
                     title: abalone
                   cuttlefish:
-                    type: string
+                    type: boolean
                     title: cuttlefish
                   how_much:
-                    type: string
+                    type: boolean
                     title: いくら
                   orange:
-                    type: string
+                    type: boolean
                     title: オレンジ
                   cashews:
-                    type: string
+                    type: boolean
                     title: ｶｼｭｰﾅｯﾂ
                   kiwifruit:
-                    type: string
+                    type: boolean
                     title: ｷｳｲﾌﾙｰﾂ
                   beef:
-                    type: string
+                    type: boolean
                     title: 牛肉
                   walnut:
-                    type: string
+                    type: boolean
                     title: くるみ
                   sesame:
-                    type: string
+                    type: boolean
                     title: ごま
                   salmon:
-                    type: string
+                    type: boolean
                     title: salmon
                   mackerel:
-                    type: string
+                    type: boolean
                     title: さば
                   soybean:
-                    type: string
+                    type: boolean
                     title: 大豆
                   chicken:
-                    type: string
+                    type: boolean
                     title: 鶏肉
                   banana:
-                    type: string
+                    type: boolean
                     title: バナナ
                   pork:
-                    type: string
+                    type: boolean
                     title: 豚肉
                   matsutake_mushroom:
-                    type: string
+                    type: boolean
                     title: matsutake_mushroom
                   peach:
-                    type: string
+                    type: boolean
                     title: もも
                   japanese_yam:
-                    type: string
+                    type: boolean
                     title: Japanese_yam
                   apple:
-                    type: string
+                    type: boolean
                     title: りんご
                   gelatin:
-                    type: string
+                    type: boolean
                     title: ゼラチン
                   seafood:
-                    type: string
+                    type: boolean
                     title: 魚介類
+              examples:
+                sample1:
+                  summary: "Sample Response 1"
+                  value:
+                    shrimp: false
+                    crab: false
+                    wheat: true
+                    soba: false
+                    egg: true
+                    milk_component: true
+                    peanut: false
+                    almond: false
+                    abalone: false
+                    cuttlefish: false
+                    how_much: false
+                    orange: false
+                    cashews: false
+                    kiwifruit: false
+                    beef: false
+                    walnut: false
+                    sesame: false
+                    salmon: false
+                    mackerel: false
+                    soybean: true
+                    chicken: false
+                    banana: false
+                    pork: false
+                    matsutake_mushroom: false
+                    peach: false
+                    japanese_yam: false
+                    apple: false
+                    gelatin: false
+                    seafood: false
+                sample2:
+                  summary: "Sample Response 2"
+                  value:
+                    shrimp: false
+                    crab: false
+                    wheat: false
+                    soba: true
+                    egg: false
+                    milk_component: false
+                    peanut: false
+                    almond: false
+                    abalone: false
+                    cuttlefish: false
+                    how_much: false
+                    orange: false
+                    cashews: false
+                    kiwifruit: false
+                    beef: false
+                    walnut: false
+                    sesame: false
+                    salmon: false
+                    mackerel: false
+                    soybean: false
+                    chicken: false
+                    banana: false
+                    pork: false
+                    matsutake_mushroom: false
+                    peach: false
+                    japanese_yam: false
+                    apple: false
+                    gelatin: false
+                    seafood: true
+                sample3:
+                  summary: "Sample Response 3"
+                  value:
+                    shrimp: true
+                    crab: false
+                    wheat: false
+                    soba: false
+                    egg: false
+                    milk_component: false
+                    peanut: false
+                    almond: false
+                    abalone: false
+                    cuttlefish: false
+                    how_much: false
+                    orange: false
+                    cashews: false
+                    kiwifruit: false
+                    beef: false
+                    walnut: false
+                    sesame: false
+                    salmon: false
+                    mackerel: false
+                    soybean: false
+                    chicken: false
+                    banana: false
+                    pork: false
+                    matsutake_mushroom: false
+                    peach: false
+                    japanese_yam: false
+                    apple: false
+                    gelatin: false
+                    seafood: false
+                sample4:
+                  summary: "Sample Response 4"
+                  value:
+                    shrimp: false
+                    crab: false
+                    wheat: false
+                    soba: false
+                    egg: false
+                    milk_component: false
+                    peanut: false
+                    almond: false
+                    abalone: false
+                    cuttlefish: false
+                    how_much: false
+                    orange: false
+                    cashews: false
+                    kiwifruit: false
+                    beef: false
+                    walnut: false
+                    sesame: false
+                    salmon: false
+                    mackerel: false
+                    soybean: false
+                    chicken: false
+                    banana: false
+                    pork: false
+                    matsutake_mushroom: false
+                    peach: false
+                    japanese_yam: false
+                    apple: false
+                    gelatin: false
+                    seafood: false
+                sample5:
+                  summary: "Sample Response 5"
+                  value:
+                    shrimp: true
+                    crab: false
+                    wheat: false
+                    soba: false
+                    egg: false
+                    milk_component: false
+                    peanut: false
+                    almond: false
+                    abalone: false
+                    cuttlefish: false
+                    how_much: false
+                    orange: false
+                    cashews: false
+                    kiwifruit: false
+                    beef: false
+                    walnut: false
+                    sesame: false
+                    salmon: false
+                    mackerel: false
+                    soybean: false
+                    chicken: false
+                    banana: false
+                    pork: false
+                    matsutake_mushroom: false
+                    peach: false
+                    japanese_yam: false
+                    apple: false
+                    gelatin: false
+                    seafood: false
   /product/{productId}/bulk_display:
     get:
       summary: "Get product bulk display information"
@@ -582,6 +743,139 @@ paths:
                   other_display:
                     type: string
                     title: その他表示
+              examples:
+                sample1:
+                  summary: "Sample Response 1"
+                  value:
+                    name: "Product 1"
+                    raw_materials_name: "Raw Material 1"
+                    net: "500g"
+                    solid_quantity: "300g"
+                    content_total: "550g"
+                    save_method: "Keep in a cool, dry place."
+                    origin_country: "Country 1"
+                    material_place_of_origin_name: "Region 1"
+                    attention_on_using: "Handle with care."
+                    cooking_method: "Boil in water for 10 minutes."
+                    how_to_use: "Open and consume directly."
+                    sterilization_method: "Heat at 80°C for 15 minutes."
+                    freezing_heating_presence_previous: "No"
+                    heating_cooking_necessity: "Yes"
+                    starch_content_rate: "25%"
+                    fat_free_milk_solid_minutes: "2%"
+                    milk_fat_minutes: "3%"
+                    time_limit: "2024-01-01"
+                    other_display: "Additional information here."
+                sample2:
+                  summary: "Sample Response 2"
+                  value:
+                    name: "Product 2"
+                    raw_materials_name: "Raw Material 2"
+                    net: "300g"
+                    solid_quantity: "200g"
+                    content_total: "350g"
+                    save_method: "Store in a dry place."
+                    origin_country: "Country 2"
+                    material_place_of_origin_name: "Region 2"
+                    attention_on_using: "Use with caution."
+                    cooking_method: "Microwave for 5 minutes."
+                    how_to_use: "Refrigerate after opening."
+                    sterilization_method: "Steam at 100°C for 20 minutes."
+                    freezing_heating_presence_previous: "Yes"
+                    heating_cooking_necessity: "No"
+                    starch_content_rate: "15%"
+                    fat_free_milk_solid_minutes: "1%"
+                    milk_fat_minutes: "2%"
+                    time_limit: "2023-12-31"
+                    other_display: "Additional details provided."
+                sample3:
+                  summary: "Sample Response 3"
+                  value:
+                    name: "Product 3"
+                    raw_materials_name: "Raw Material 3"
+                    net: "700g"
+                    solid_quantity: "500g"
+                    content_total: "800g"
+                    save_method: "Store away from direct sunlight."
+                    origin_country: "Country 3"
+                    material_place_of_origin_name: "Region 3"
+                    attention_on_using: "Handle with care."
+                    cooking_method: "Fry in a pan for 15 minutes."
+                    how_to_use: "Consume within 2 days of opening."
+                    sterilization_method: "Boil at 90°C for 10 minutes."
+                    freezing_heating_presence_previous: "No"
+                    heating_cooking_necessity: "Yes"
+                    starch_content_rate: "20%"
+                    fat_free_milk_solid_minutes: "1.5%"
+                    milk_fat_minutes: "2.5%"
+                    time_limit: "2024-02-15"
+                    other_display: "Extra information included."
+                sample4:
+                  summary: "Sample Response 4"
+                  value:
+                    name: "Product 4"
+                    raw_materials_name: "Raw Material 4"
+                    net: "450g"
+                    solid_quantity: "250g"
+                    content_total: "500g"
+                    save_method: "Keep in a cool, dark place."
+                    origin_country: "Country 4"
+                    material_place_of_origin_name: "Region 4"
+                    attention_on_using: "Use with caution."
+                    cooking_method: "Bake in the oven for 20 minutes."
+                    how_to_use: "Keep refrigerated after opening."
+                    sterilization_method: "Microwave at 1200W for 5 minutes."
+                    freezing_heating_presence_previous: "Yes"
+                    heating_cooking_necessity: "No"
+                    starch_content_rate: "18%"
+                    fat_free_milk_solid_minutes: "1.8%"
+                    milk_fat_minutes: "2.8%"
+                    time_limit: "2023-12-30"
+                    other_display: "Additional details provided."
+                sample5:
+                  summary: "Sample Response 5"
+                  value:
+                    name: "Product 5"
+                    raw_materials_name: "Raw Material 5"
+                    net: "600g"
+                    solid_quantity: "400g"
+                    content_total: "700g"
+                    save_method: "Store in a cool place."
+                    origin_country: "Country 5"
+                    material_place_of_origin_name: "Region 5"
+                    attention_on_using: "Handle with care."
+                    cooking_method: "Boil in water for 12 minutes."
+                    how_to_use: "Consume directly from the package."
+                    sterilization_method: "Heat at 85°C for 18 minutes."
+                    freezing_heating_presence_previous: "No"
+                    heating_cooking_necessity: "Yes"
+                    starch_content_rate: "22%"
+                    fat_free_milk_solid_minutes: "1.2%"
+                    milk_fat_minutes: "2.2%"
+                    time_limit: "2024-01-10"
+                    other_display: "Extra information included."
+                sample6:
+                  summary: "Sample Response 6"
+                  value:
+                    name: "Product 6"
+                    raw_materials_name: "Raw Material 6"
+                    net: "400g"
+                    solid_quantity: "300g"
+                    content_total: "550g"
+                    save_method: "Keep in a cool, dry place."
+                    origin_country: "Country 6"
+                    material_place_of_origin_name: "Region 6"
+                    attention_on_using: "Use with caution."
+                    cooking_method: "Microwave for 8 minutes."
+                    how_to_use: "Refrigerate after opening."
+                    sterilization_method: "Steam at 95°C for 15 minutes."
+                    freezing_heating_presence_previous: "Yes"
+                    heating_cooking_necessity: "No"
+                    starch_content_rate: "20%"
+                    fat_free_milk_solid_minutes: "1.5%"
+                    milk_fat_minutes: "2.5%"
+                    time_limit: "2023-12-31"
+                    other_display: "Additional details provided."
   /product/{productId}/company:
     get:
       summary: "Get product company information"
@@ -632,6 +926,105 @@ paths:
                   processing_person_address:
                     type: string
                     title: 加工者住所
+              examples:
+                sample1:
+                  summary: "Sample Response 1"
+                  value:
+                    manufacturer_name: "Manufacturer 1"
+                    manufacturer_address: "123 Manufacturing St, City 1, Country 1"
+                    manufacturer_call: "+123456789"
+                    sales_person_name: "Salesperson 1"
+                    sales_person_address: "456 Sales St, City 1, Country 1"
+                    sales_person_call: "+987654321"
+                    imported_person_name: "Importer 1"
+                    imported_person_address: "789 Import St, City 1, Country 1"
+                    imported_person_call: "+1122334455"
+                    processing_person_name: "Processor 1"
+                    processing_person_address: "101 Processing St, City 1, Country 1"
+                sample2:
+                  summary: "Sample Response 2"
+                  value:
+                    manufacturer_name: "Manufacturer 2"
+                    manufacturer_address: "456 Manufacturing St, City 2, Country 2"
+                    manufacturer_call: "+111223344"
+                    sales_person_name: "Salesperson 2"
+                    sales_person_address: "789 Sales St, City 2, Country 2"
+                    sales_person_call: "+9988776655"
+                    imported_person_name: "Importer 2"
+                    imported_person_address: "123 Import St, City 2, Country 2"
+                    imported_person_call: "+5544332211"
+                    processing_person_name: "Processor 2"
+                    processing_person_address: "202 Processing St, City 2, Country 2"
+                sample3:
+                  summary: "Sample Response 3"
+                  value:
+                    manufacturer_name: "Manufacturer 3"
+                    manufacturer_address: "789 Manufacturing St, City 3, Country 3"
+                    manufacturer_call: "+998877665"
+                    sales_person_name: "Salesperson 3"
+                    sales_person_address: "101 Sales St, City 3, Country 3"
+                    sales_person_call: "+6655443322"
+                    imported_person_name: "Importer 3"
+                    imported_person_address: "234 Import St, City 3, Country 3"
+                    imported_person_call: "+3322110099"
+                    processing_person_name: "Processor 3"
+                    processing_person_address: "303 Processing St, City 3, Country 3"
+                sample4:
+                  summary: "Sample Response 4"
+                  value:
+                    manufacturer_name: "Manufacturer 4"
+                    manufacturer_address: "101 Manufacturing St, City 4, Country 4"
+                    manufacturer_call: "+112233445"
+                    sales_person_name: "Salesperson 4"
+                    sales_person_address: "345 Sales St, City 4, Country 4"
+                    sales_person_call: "+5566778899"
+                    imported_person_name: "Importer 4"
+                    imported_person_address: "567 Import St, City 4, Country 4"
+                    imported_person_call: "+9900112233"
+                    processing_person_name: "Processor 4"
+                    processing_person_address: "404 Processing St, City 4, Country 4"
+                sample5:
+                  summary: "Sample Response 5"
+                  value:
+                    manufacturer_name: "Manufacturer 5"
+                    manufacturer_address: "234 Manufacturing St, City 5, Country 5"
+                    manufacturer_call: "+990011223"
+                    sales_person_name: "Salesperson 5"
+                    sales_person_address: "678 Sales St, City 5, Country 5"
+                    sales_person_call: "+1122334455"
+                    imported_person_name: "Importer 5"
+                    imported_person_address: "789 Import St, City 5, Country 5"
+                    imported_person_call: "+5544332211"
+                    processing_person_name: "Processor 5"
+                    processing_person_address: "505 Processing St, City 5, Country 5"
+                sample6:
+                  summary: "Sample Response 6"
+                  value:
+                    manufacturer_name: "Manufacturer 6"
+                    manufacturer_address: "345 Manufacturing St, City 6, Country 6"
+                    manufacturer_call: "+665544332"
+                    sales_person_name: "Salesperson 6"
+                    sales_person_address: "789 Sales St, City 6, Country 6"
+                    sales_person_call: "+3322110099"
+                    imported_person_name: "Importer 6"
+                    imported_person_address: "890 Import St, City 6, Country 6"
+                    imported_person_call: "+9988776655"
+                    processing_person_name: "Processor 6"
+                    processing_person_address: "606 Processing St, City 6, Country 6"
+                sample7:
+                  summary: "Sample Response 7"
+                  value:
+                    manufacturer_name: "Manufacturer 7"
+                    manufacturer_address: "456 Manufacturing St, City 7, Country 7"
+                    manufacturer_call: "+112233445"
+                    sales_person_name: "Salesperson 7"
+                    sales_person_address: "567 Sales St, City 7, Country 7"
+                    sales_person_call: "+5566778899"
+                    imported_person_name: "Importer 7"
+                    imported_person_address: "678 Import St, City 7, Country 7"
+                    imported_person_call: "+9900112233"
+                    processing_person_name: "Processor 7"
+                    processing_person_address: "707 Processing St, City 7, Country 7"
   /product/{productId}/production_processing_office:
     get:
       summary: "Get product production processing office information"
@@ -655,3 +1048,104 @@ paths:
                   factory_address:
                     type: string
                     title: 工場住所
+              examples:
+                sample1:
+                  summary: "Sample Response 1"
+                  value:
+                    factory_name: "Factory 1"
+                    factory_address: "123 Factory St, City 1, Country 1"
+                sample2:
+                  summary: "Sample Response 2"
+                  value:
+                    factory_name: "Factory 2"
+                    factory_address: "456 Factory St, City 2, Country 2"
+                sample3:
+                  summary: "Sample Response 3"
+                  value:
+                    factory_name: "Factory 3"
+                    factory_address: "789 Factory St, City 3, Country 3"
+                sample4:
+                  summary: "Sample Response 4"
+                  value:
+                    factory_name: "Factory 4"
+                    factory_address: "101 Factory St, City 4, Country 4"
+                sample5:
+                  summary: "Sample Response 5"
+                  value:
+                    factory_name: "Factory 5"
+                    factory_address: "234 Factory St, City 5, Country 5"
+                sample6:
+                  summary: "Sample Response 6"
+                  value:
+                    factory_name: "Factory 6"
+                    factory_address: "345 Factory St, City 6, Country 6"
+                sample7:
+                  summary: "Sample Response 7"
+                  value:
+                    factory_name: "Factory 7"
+                    factory_address: "456 Factory St, City 7, Country 7"
+                sample8:
+                  summary: "Sample Response 8"
+                  value:
+                    factory_name: "Factory 8"
+                    factory_address: "567 Factory St, City 8, Country 8"
+                sample9:
+                  summary: "Sample Response 9"
+                  value:
+                    factory_name: "Factory 9"
+                    factory_address: "678 Factory St, City 9, Country 9"
+                sample10:
+                  summary: "Sample Response 10"
+                  value:
+                    factory_name: "Factory 10"
+                    factory_address: "789 Factory St, City 10, Country 10"
+                sample11:
+                  summary: "Sample Response 11"
+                  value:
+                    factory_name: "Factory 11"
+                    factory_address: "890 Factory St, City 11, Country 11"
+                sample12:
+                  summary: "Sample Response 12"
+                  value:
+                    factory_name: "Factory 12"
+                    factory_address: "901 Factory St, City 12, Country 12"
+                sample13:
+                  summary: "Sample Response 13"
+                  value:
+                    factory_name: "Factory 13"
+                    factory_address: "112 Factory St, City 13, Country 13"
+                sample14:
+                  summary: "Sample Response 14"
+                  value:
+                    factory_name: "Factory 14"
+                    factory_address: "223 Factory St, City 14, Country 14"
+                sample15:
+                  summary: "Sample Response 15"
+                  value:
+                    factory_name: "Factory 15"
+                    factory_address: "334 Factory St, City 15, Country 15"
+                sample16:
+                  summary: "Sample Response 16"
+                  value:
+                    factory_name: "Factory 16"
+                    factory_address: "445 Factory St, City 16, Country 16"
+                sample17:
+                  summary: "Sample Response 17"
+                  value:
+                    factory_name: "Factory 17"
+                    factory_address: "556 Factory St, City 17, Country 17"
+                sample18:
+                  summary: "Sample Response 18"
+                  value:
+                    factory_name: "Factory 18"
+                    factory_address: "667 Factory St, City 18, Country 18"
+                sample19:
+                  summary: "Sample Response 19"
+                  value:
+                    factory_name: "Factory 19"
+                    factory_address: "778 Factory St, City 19, Country 19"
+                sample20:
+                  summary: "Sample Response 20"
+                  value:
+                    factory_name: "Factory 20"
+                    factory_address: "889 Factory St, City 20, Country 20"
