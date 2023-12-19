@@ -404,3 +404,254 @@ paths:
                     pb_nb_classification: "NB"
         "400":
           description: エラー
+  /product/{productId}/allergy:
+    get:
+      summary: "Get product allergy information"
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  shrimp:
+                    type: string
+                    title: えび
+                  crab:
+                    type: string
+                    title: かに
+                  wheat:
+                    type: string
+                    title: 小麦
+                  soba:
+                    type: string
+                    title: そば
+                  egg:
+                    type: string
+                    title: 卵
+                  milk_component:
+                    type: string
+                    title: 乳成分
+                  peanut:
+                    type: string
+                    title: 落花生
+                  almond:
+                    type: string
+                    title: アーモンド
+                  abalone:
+                    type: string
+                    title: abalone
+                  cuttlefish:
+                    type: string
+                    title: cuttlefish
+                  how_much:
+                    type: string
+                    title: いくら
+                  orange:
+                    type: string
+                    title: オレンジ
+                  cashews:
+                    type: string
+                    title: ｶｼｭｰﾅｯﾂ
+                  kiwifruit:
+                    type: string
+                    title: ｷｳｲﾌﾙｰﾂ
+                  beef:
+                    type: string
+                    title: 牛肉
+                  walnut:
+                    type: string
+                    title: くるみ
+                  sesame:
+                    type: string
+                    title: ごま
+                  salmon:
+                    type: string
+                    title: salmon
+                  mackerel:
+                    type: string
+                    title: さば
+                  soybean:
+                    type: string
+                    title: 大豆
+                  chicken:
+                    type: string
+                    title: 鶏肉
+                  banana:
+                    type: string
+                    title: バナナ
+                  pork:
+                    type: string
+                    title: 豚肉
+                  matsutake_mushroom:
+                    type: string
+                    title: matsutake_mushroom
+                  peach:
+                    type: string
+                    title: もも
+                  japanese_yam:
+                    type: string
+                    title: Japanese_yam
+                  apple:
+                    type: string
+                    title: りんご
+                  gelatin:
+                    type: string
+                    title: ゼラチン
+                  seafood:
+                    type: string
+                    title: 魚介類
+  /product/{productId}/bulk_display:
+    get:
+      summary: "Get product bulk display information"
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    title: 名称
+                  raw_materials_name:
+                    type: string
+                    title: 原材料名
+                  net:
+                    type: string
+                    title: 内容量
+                  solid_quantity:
+                    type: string
+                    title: 固形量
+                  content_total:
+                    type: string
+                    title: 内容総量
+                  save_method:
+                    type: string
+                    title: 保存方法
+                  origin_country:
+                    type: string
+                    title: 原産国
+                  material_place_of_origin_name:
+                    type: string
+                    title: 原料原産地名
+                  attention_on_using:
+                    type: string
+                    title: 使用上の注意
+                  cooking_method:
+                    type: string
+                    title: 調理方法
+                  how_to_use:
+                    type: string
+                    title: 使用方法
+                  sterilization_method:
+                    type: string
+                    title: 殺菌方法
+                  freezing_heating_presence_previous:
+                    type: string
+                    title: 凍結前加熱の有無
+                  heating_cooking_necessity:
+                    type: string
+                    title: 加熱調理の必要性
+                  starch_content_rate:
+                    type: string
+                    title: でん粉含有率
+                  fat_free_milk_solid_minutes:
+                    type: string
+                    title: Fat-free乳固形分
+                  milk_fat_minutes:
+                    type: string
+                    title: 乳脂肪分
+                  time_limit:
+                    type: string
+                    title: 期限
+                  other_display:
+                    type: string
+                    title: その他表示
+  /product/{productId}/company:
+    get:
+      summary: "Get product company information"
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  manufacturer_name:
+                    type: string
+                    title: 製造者名
+                  manufacturer_address:
+                    type: string
+                    title: 製造者住所
+                  manufacturer_call:
+                    type: string
+                    title: 製造者電話
+                  sales_person_name:
+                    type: string
+                    title: 販売者名
+                  sales_person_address:
+                    type: string
+                    title: 販売者住所
+                  sales_person_call:
+                    type: string
+                    title: 販売者電話
+                  imported_person_name:
+                    type: string
+                    title: 輸入者名
+                  imported_person_address:
+                    type: string
+                    title: 輸入者住所
+                  imported_person_call:
+                    type: string
+                    title: 輸入者電話
+                  processing_person_name:
+                    type: string
+                    title: 加工者名
+                  processing_person_address:
+                    type: string
+                    title: 加工者住所
+  /product/{productId}/production_processing_office:
+    get:
+      summary: "Get product production processing office information"
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  factory_name:
+                    type: string
+                    title: 工場名
+                  factory_address:
+                    type: string
+                    title: 工場住所
