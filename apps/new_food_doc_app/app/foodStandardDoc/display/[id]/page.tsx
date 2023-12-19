@@ -6,11 +6,9 @@ export default function foodStandardDocDisplayPage({
 }: {
   params: { id: string };
 }) {
-  console.log("ID:", params.id);
-
   return (
     <div>
-      <FoodBaseInfoCard />
+      <FoodBaseInfoCard id={params.id} />
       <FoodInfoTabs />
     </div>
   );
