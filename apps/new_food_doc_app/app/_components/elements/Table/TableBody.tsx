@@ -1,4 +1,5 @@
 import { TableBodyProps } from "@/app/_types/props";
+import Link from "next/link";
 
 const TableBody = (props: { bodies: TableBodyProps[] }) => {
   return (
@@ -9,9 +10,12 @@ const TableBody = (props: { bodies: TableBodyProps[] }) => {
           scope="col"
           className="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap"
         >
-          <a href="./display/" className="hover:text-blue-500">
+          <Link
+            href={`/foodStandardDoc/display/${index}`}
+            className="hover:text-blue-500"
+          >
             {body.value}
-          </a>
+          </Link>
         </td>
       ))}
     </tr>
