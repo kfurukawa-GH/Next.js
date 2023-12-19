@@ -404,7 +404,7 @@ paths:
                     pb_nb_classification: "NB"
         "400":
           description: エラー
-  /product/{productId}/allergy:
+  /products/{productId}/allergy:
     get:
       summary: "Get product allergy information"
       parameters:
