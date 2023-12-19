@@ -23,6 +23,7 @@ const FoodBaseInfoView = () => {
     data.value.forEach((item) => {
       bodyItems.push({ value: item.product_name });
       bodyItems.push({ value: item.common_products_code });
+      bodyItems.push({ value: item.brand_name });
       bodyItems.push({ value: item.applying_date });
       bodyItems.push({ value: item.maker_name });
       bodyItems.push({ value: item.pb_nb_classification });
@@ -33,16 +34,16 @@ const FoodBaseInfoView = () => {
 
   return (
     <>
-      <div className="relative overflow-x-auto shadow-md rounded-lg">
-        <div className="sticky top-0 bg-white">
-          <table className="table-auto w-full">
-            <TableHeader headers={headerItems} />
-          </table>
-        </div>
-        <div>
-          <table className="table-auto w-full">
-            <tbody>{list}</tbody>
-          </table>
+      <div className="flex flex-col">
+        <div className="overflow-x-auto sm:mx-0.5 lg:mx-0.5">
+          <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+            <div className="overflow-hidden">
+              <table className="min-w-full">
+                <TableHeader headers={headerItems} />
+                <tbody>{list}</tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
       {error ? <p>{error}</p> : null}

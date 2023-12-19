@@ -2,10 +2,14 @@ import { TableHeaderProps } from "@/app/_types/props";
 
 const TableHeader = (props: { headers: TableHeaderProps[] }) => {
   return (
-    <thead className="bg-gray-700 text-gray-400 uppercase">
+    <thead className="bg-white border-b uppercase">
       <tr>
-        {props.headers.map((header) => (
-          <th key={header.value} scope="col" className="px-6 py-3">
+        {props.headers.map((header, index) => (
+          <th
+            key={index}
+            scope="col"
+            className="text-sm font-medium text-gray-900 px-6 py-4 text-left"
+          >
             {header.value}
           </th>
         ))}
