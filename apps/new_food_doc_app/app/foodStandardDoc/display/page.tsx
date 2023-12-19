@@ -4,9 +4,8 @@ import FoodInfoTabs from "./_components/FoodInfoTabs";
 const foodStandardDocDisplayPage = () => {
   return (
     <div>
-      <h1>foodStandardDoc</h1>
-      {/* <FoodBaseInfoCard />
-      <FoodInfoTabs /> */}
+      <FoodBaseInfoCard />
+      <FoodInfoTabs />
     </div>
   );
 };

@@ -24,7 +24,6 @@ const FoodBaseInfoCard = () => {
 
   return (
     <>
-      <h1>食品基本情報カード</h1>
       <Card imageAsset={imagePath} items={listItems} items2={listItems2} />
     </>
   );
