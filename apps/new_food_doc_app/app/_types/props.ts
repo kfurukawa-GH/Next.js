@@ -3,5 +3,6 @@ export type TableHeaderProps = {
 };
 
 export type TableBodyProps = {
+  id: number;
   value: string;
 };
